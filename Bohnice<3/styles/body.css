@@ -1,0 +1,17 @@
+body{
+    background-image: url(https://i.pinimg.com/736x/03/07/6e/03076e1318f9b8eedc8733509f469e86.jpg);
+}
+
+.bohnicetext{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 150px;
+    justify-content: center;
+    font-family: lexend;
+    text-align: center;
+}
+
+@font-face {
+    font-family: lexend;
+    src: url(/styles/font/Lexend-Regular.ttf);
+}
