@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(105, 105, 105);
+    height: 300vh;
+    overflow-x: hidden;
+}
+.bohnice{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 150px;
+    justify-content: center;
+    font-family: lexend;
+    text-align: center;
+    text-shadow: 5px 6px 8px rgba(0, 0, 0, 0.685);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #4d4d4d;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 1px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+    border-radius: 1px;
+}
+
+@font-face {
+    font-family: lexend;
+    src: url(/bohnice/assets/fonts/Lexend-Regular.ttf);
+}
+
+@font-face {
+    font-family: poiret;
+    src: url(/bohnice/assets/fonts/PoiretOne-Regular.ttf);
+}
