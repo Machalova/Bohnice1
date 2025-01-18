@@ -4,14 +4,13 @@ body{
     overflow-x: hidden;
 }
 
-.header{
+.img1{
     position: fixed;
     display: flex;
     left: 0;
-    z-index: 1;
-    top: -10px;
-    background-color: #5134b9;
-    width: 100%;
+    z-index: 10;
+    top: 0px;
+    padding: 10px 10px;
     animation: bottomIn 0.2s ease forwards;
 }
 
