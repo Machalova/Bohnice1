@@ -76,7 +76,12 @@ body{
         width: 50%;
         text-align: center;
         box-shadow: 4px 10px 8px rgba(0, 0, 0, 0.434),-4px 4px 8px rgba(0, 0, 0, 0.334);
+        transition: 0.2s;
         font-family: lexend;
+    }
+
+    .grid div:hover{
+        transform: scale(1.1);
     }
 
 .svgkokotina {
