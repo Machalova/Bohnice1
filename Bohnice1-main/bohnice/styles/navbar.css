@@ -1,46 +1,47 @@
 .navbar{
-    background-color: rgb(255, 255, 255);
+    background-color: #5134b9;
     position: fixed;
-    top: 1%;
-    left: 5%;
-    box-shadow: 0px 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    top: 6%;
+    left: 0%;
+    height: 40px;
     transform: translate(-50%, 0%);
-    width: 90%;
+    width: 100%;
     z-index: 10;
     font-family: lexend;
-    border-radius: 35px;
-    animation: bottomIn 1s ease forwards;
-    
+    animation: bottomIn 0.2s ease forwards;
+    border-style: groove;
+    border-width: 2px 0px 2px 0;
+    border-color: #5134b9;
+    align-items: center;
 }
   /* Style the links inside the navigation bar */
   .navbar a {
     float: inherit;
     position: relative;
     left: -30px;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
-    padding: 10px 20px;
+    padding: 8px 10px;
     text-decoration: none;
-    font-size: 25px;
-    border-radius: 25px;
+    font-size: 18px;
     transition: 0.5s;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.685);
+    align-items: center;
   }
   
   /* Change the color of links on hover */
   .navbar a:hover {
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    align-items: center;
     
   }
   
   /* Add a color to the active/current link */
   .navbar a.active {
-    background-color: rgb(221, 221, 221);
-    color: rgb(0, 0, 0);
-    border-style: dashed;
-    border-color: #5c5c5c;
-    border-width: 1px;
+    background-color: #6541e7;
+    color: rgb(255, 255, 255);
+    align-items: center;
   }
 
   @font-face {
@@ -49,6 +50,7 @@
 }
 
 @keyframes bottomIn{
-  from {transform: translateY(-70px);}
+  from {transform: translateY(-140px);}
   to {transform: translateY(0px);}
 }
+

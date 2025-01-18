@@ -1,38 +1,126 @@
 body{
-    background-color: rgb(105, 105, 105);
-    height: 300vh;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    height: 500vh;
     overflow-x: hidden;
 }
-.bohnice{
+
+.header{
+    position: fixed;
     display: flex;
-    color: rgb(255, 255, 255);
-    font-size: 150px;
-    justify-content: center;
-    font-family: lexend;
-    text-align: center;
-    text-shadow: 5px 6px 8px rgba(0, 0, 0, 0.685);
+    left: 0;
+    z-index: 1;
+    top: -10px;
+    background-color: #5134b9;
+    width: 100%;
+    animation: bottomIn 0.2s ease forwards;
 }
+
+.titleBar1{
+    background-image: linear-gradient(175deg,#5134b9 40%, #ee7d51);
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-bottom: 100px;
+    justify-content: center;
+    
+}
+
+    .titleBar1 h5{
+        position: relative;
+        color: rgb(255, 255, 255);
+        font-size: 150px;
+        top: -100px;
+        font-family: lexend;
+        text-align: center;
+        animation: fadeIn 2s ease forwards;
+    }
+    
+.text1{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+    .text1 h5{
+        position: relative;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-style: oblique;
+        top: 300px;
+        font-family: tera;
+        text-align: center;
+        animation: fadeIn 2s ease forwards;
+    }
+
+.grid{
+    position: relative;
+    top: 850px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 400px;
+    place-items: center;
+}
+
+    .grid div{
+        background-color: #ffffff;
+        padding: 10px 20px;
+        border-style: solid;
+        border-radius: 30px;
+        border-width: 1px;
+        border-color: rgb(0, 0, 0);
+        width: 50%;
+        text-align: center;
+        box-shadow: 4px 10px 8px rgba(0, 0, 0, 0.434),-4px 4px 8px rgba(0, 0, 0, 0.334);
+        font-family: lexend;
+    }
+
+.svgkokotina {
+    position: absolute;
+    top: 642px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+    
+     .svgkokotina svg {
+         position: relative;
+         display: block;
+        width: calc(100% + 1.3px);
+        height: 148px;
+    }
+    
+    .svgkokotina .shape-fill {
+         fill: #FFFFFF;
+    }
+
 html{
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-    width: 5px;
-}
-  
-::-webkit-scrollbar-track {
-    background: #4d4d4d;
-}
-  
-::-webkit-scrollbar-thumb {
-    background: #ffffff;
-    border-radius: 1px;
-}
-  
-::-webkit-scrollbar-thumb:hover {
-    background: #a8a8a8;
-    border-radius: 1px;
-}
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #4d4d4d;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #ffffff;
+        border-radius: 1px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+        border-radius: 1px;
+    }
 
 @font-face {
     font-family: lexend;
@@ -43,3 +131,13 @@ html{
     font-family: poiret;
     src: url(/bohnice/assets/fonts/PoiretOne-Regular.ttf);
 }
+
+@font-face {
+    font-family: tera;
+    src: url(/bohnice/assets/fonts/LexendTera-Regular.ttf);
+}
+
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
