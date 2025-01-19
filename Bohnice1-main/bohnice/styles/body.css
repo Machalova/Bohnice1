@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    background-image: linear-gradient(#ffffff 20%, aliceblue);
     height: 500vh;
     overflow-x: hidden;
 }
@@ -60,7 +60,7 @@ body{
     position: relative;
     top: 850px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px 400px;
     place-items: center;
 }
@@ -69,10 +69,11 @@ body{
         background-color: #ffffff;
         padding: 10px 20px;
         border-style: solid;
-        border-radius: 30px;
+        border-radius: 40px;
         border-width: 1px;
         border-color: rgb(0, 0, 0);
-        width: 50%;
+        width: 70%;
+        min-width: 70%;
         text-align: center;
         box-shadow: 4px 10px 8px rgba(0, 0, 0, 0.434),-4px 4px 8px rgba(0, 0, 0, 0.334);
         transition: 0.2s;
@@ -101,7 +102,7 @@ body{
     }
     
     .svgkokotina .shape-fill {
-         fill: #FFFFFF;
+         fill: #ffffff;
     }
 
 html{
